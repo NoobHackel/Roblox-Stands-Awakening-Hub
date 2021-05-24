@@ -1,0 +1,2 @@
+-- source : https://discord.gg/kSZvH4AhVZ
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
