@@ -1,0 +1,216 @@
+-- Gui made by Noob_Hackel
+
+local InsertedObjects = Instance.new("ScreenGui")
+local Gradient = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local SKYHUBButton = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local EnxquityScriptsButton = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local BeboScriptsButton = Instance.new("TextButton")
+local Shadow_3 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local BKHAXHUBButton = Instance.new("TextButton")
+local Shadow_4 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+
+InsertedObjects.Name = "InsertedObjects"
+InsertedObjects.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+InsertedObjects.Parent = game.CoreGui 
+
+Gradient.Name = "Gradient"
+Gradient.Parent = InsertedObjects
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient.BorderSizePixel = 0
+Gradient.Position = UDim2.new(0.394440025, 0, 0.378095239, 0)
+Gradient.Size = UDim2.new(0, 202, 0, 265)
+Gradient.Active = true
+Gradient.Draggable = true
+function onKeyPress(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.RightShift then
+		if Gradient.Visible == false then
+			Gradient.Visible = true
+		else
+			Gradient.Visible = false
+		end
+	end
+end
+
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+
+TextLabel.Parent = Gradient
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 100.000
+TextLabel.Position = UDim2.new(0.00335091352, 0, -0.0265522301, 0)
+TextLabel.Size = UDim2.new(0, 202, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Stands Awakening Script HUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 30, 30)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient.Parent = Gradient
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Gradient
+
+SKYHUBButton.Name = "SKYHUBButton"
+SKYHUBButton.Parent = Gradient
+SKYHUBButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+SKYHUBButton.BorderSizePixel = 0
+SKYHUBButton.Position = UDim2.new(0.063415885, 0, 0.371442765, 0)
+SKYHUBButton.Size = UDim2.new(0, 180, 0, 45)
+SKYHUBButton.ZIndex = 2
+SKYHUBButton.Font = Enum.Font.GothamSemibold
+SKYHUBButton.Text = ""
+SKYHUBButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SKYHUBButton.TextScaled = true
+SKYHUBButton.TextSize = 14.000
+SKYHUBButton.TextWrapped = true
+SKYHUBButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NoobHackel/Roblox-Stands-Awakening-Hub/main/SKY-HUB'),true))()
+end)
+
+Shadow.Name = "Shadow"
+Shadow.Parent = SKYHUBButton
+Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_2.Parent = SKYHUBButton
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "SKY HUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+EnxquityScriptsButton.Name = "EnxquityScriptsButton"
+EnxquityScriptsButton.Parent = Gradient
+EnxquityScriptsButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+EnxquityScriptsButton.BorderSizePixel = 0
+EnxquityScriptsButton.Position = UDim2.new(0.0634158552, 0, 0.791308403, 0)
+EnxquityScriptsButton.Size = UDim2.new(0, 180, 0, 45)
+EnxquityScriptsButton.ZIndex = 2
+EnxquityScriptsButton.Font = Enum.Font.GothamSemibold
+EnxquityScriptsButton.Text = ""
+EnxquityScriptsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+EnxquityScriptsButton.TextScaled = true
+EnxquityScriptsButton.TextSize = 14.000
+EnxquityScriptsButton.TextWrapped = true
+EnxquityScriptsButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NoobHackel/Roblox-Stands-Awakening-Hub/main/Stands-Awakening-Script-Made-by-Enxquity'),true))()
+end)
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = EnxquityScriptsButton
+Shadow_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_3.Parent = EnxquityScriptsButton
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "Enxquity Script"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+BeboScriptsButton.Name = "BeboScriptsButton"
+BeboScriptsButton.Parent = Gradient
+BeboScriptsButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BeboScriptsButton.BorderSizePixel = 0
+BeboScriptsButton.Position = UDim2.new(0.063415885, 0, 0.579500675, 0)
+BeboScriptsButton.Size = UDim2.new(0, 180, 0, 45)
+BeboScriptsButton.ZIndex = 2
+BeboScriptsButton.Font = Enum.Font.GothamSemibold
+BeboScriptsButton.Text = ""
+BeboScriptsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BeboScriptsButton.TextScaled = true
+BeboScriptsButton.TextSize = 14.000
+BeboScriptsButton.TextWrapped = true
+BeboScriptsButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NoobHackel/Roblox-Stands-Awakening-Hub/main/BeboScripts'),true))()
+end)
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = BeboScriptsButton
+Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_4.Parent = BeboScriptsButton
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_4.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = "Bebo Script"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+BKHAXHUBButton.Name = "BKHAXHUBButton"
+BKHAXHUBButton.Parent = Gradient
+BKHAXHUBButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BKHAXHUBButton.BorderSizePixel = 0
+BKHAXHUBButton.Position = UDim2.new(0.0634158552, 0, 0.160377353, 0)
+BKHAXHUBButton.Size = UDim2.new(0, 180, 0, 45)
+BKHAXHUBButton.ZIndex = 2
+BKHAXHUBButton.Font = Enum.Font.GothamSemibold
+BKHAXHUBButton.Text = ""
+BKHAXHUBButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BKHAXHUBButton.TextScaled = true
+BKHAXHUBButton.TextSize = 14.000
+BKHAXHUBButton.TextWrapped = true
+BKHAXHUBButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NoobHackel/Roblox-Stands-Awakening-Hub/main/BKHAXHUB'),true))()
+end)
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = BKHAXHUBButton
+Shadow_4.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_5.Parent = BKHAXHUBButton
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_5.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = "BKHAXHUB"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
