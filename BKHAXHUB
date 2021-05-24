@@ -1,0 +1,3 @@
+-- [[ BKHAXHUB ]]
+-- [[1.BloxFruits 2.Stand Awakening 3.Last Pirate 4.Anime Battle Arena]]
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/koonpeatch/PeatEX/master/BKHAX/BKHAXHUB"),true))()
